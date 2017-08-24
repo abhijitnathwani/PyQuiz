@@ -25,7 +25,7 @@ class Application(tk.Frame):
 
 	#Packing the widgets in the grid
         self.radioButtonA.grid(column=2,row=4)
-	self.label_optionA.grid(column=5,row=4)
+	self.label_optionA.grid(column=3,row=4)
 	print self.label_optionA.grid_info()
         self.radioButtonB.grid(column=5,row=4)
         self.radioButtonC.grid(column=2,row=6)
