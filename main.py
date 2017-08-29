@@ -1,4 +1,6 @@
 import Tkinter as tk
+import json
+import random
 
 class Application(tk.Frame):
 
@@ -13,11 +15,47 @@ class Application(tk.Frame):
 	self.optionC = tk.StringVar()
 	self.optionD = tk.StringVar()
 	self.selected_answer = tk.StringVar()
+	self.correct_answer = ""
 	self.question = tk.StringVar()
 	self.score = tk.IntVar()
-	
+	self.file = open("questions.json","r")
+	self.questions = json.loads(self.file.read())
+	self.question_index = []
+	self.score=0
         self.createWidgets() # call to create the necessary widgets
 
+    def validate_ans(self):
+	print "In Validate answer:"
+	print "selected:",str(self.selected_answer.get())
+	print "Correct:",self.correct_answer
+        if str(self.selected_answer.get()) == (self.correct_answer):
+	    self.score=self.score+5
+	    print "Correct!"
+	
+
+    def load_question(self):
+	self.validate_ans()
+        randomindex = random.randint(0,len(self.questions["results"])-1)
+        #self.question.set('Next Clicked')
+        if randomindex not in self.question_index:
+	    self.question_index.append(randomindex)
+	    pass
+	else:
+            randomindex = random.randint(0,len(self.questions["results"])-1)
+	    self.question_index.append(randomindex)
+	print "Debug:"
+        print self.questions["results"][randomindex]["question"]
+	self.correct_answer = self.questions["results"][randomindex]["correct_answer"]
+	print self.correct_answer
+	self.answers = self.questions["results"][randomindex]["incorrect_answers"]
+	self.answers.append(self.correct_answer)
+        self.question.set(self.questions["results"][randomindex]["question"])
+	self.optionA.set(self.answers.pop(random.randrange(len(self.answers))))
+	self.optionB.set(self.answers.pop(random.randrange(len(self.answers))))
+	self.optionC.set(self.answers.pop(random.randrange(len(self.answers))))
+	self.optionD.set(self.answers.pop(random.randrange(len(self.answers))))
+	
+        
     def createWidgets(self):
 	top = self.winfo_toplevel()
 	top.rowconfigure(0,weight=1)
@@ -30,26 +68,26 @@ class Application(tk.Frame):
 	self.optionB.set('Hello B!')
 	self.optionC.set('Hello C!')
 	self.optionD.set('Hello D!')
-	self.score.set(50)
+#	self.score.set(0)
 	self.question.set('Demo Question')
 
 	#Creating the buttons
         self.quitButton = tk.Button(self, text='Quit', command=self.quit)
-        self.nextButton = tk.Button(self, text='Next')
+        self.nextButton = tk.Button(self, text='Next', command=self.load_question)
 
 	#Creating Radio buttons for options
-	self.radioButtonA = tk.Radiobutton(self,anchor='w',textvariable=self.optionA,variable=self.selected_answer, value = 'a')
-	self.radioButtonB = tk.Radiobutton(self,anchor='w',textvariable=self.optionB,variable = self.selected_answer, value = 'b')
-	self.radioButtonC = tk.Radiobutton(self,anchor='w',textvariable=self.optionC, variable = self.selected_answer, value = 'c')
-	self.radioButtonD = tk.Radiobutton(self,anchor='w',textvariable=self.optionD, variable = self.selected_answer, value='d')
+	self.radioButtonA = tk.Radiobutton(self,anchor='w',textvariable=self.optionA, variable = self.selected_answer, value = self.optionA)
+	self.radioButtonB = tk.Radiobutton(self,anchor='w',textvariable=self.optionB, variable = self.selected_answer, value = self.optionB)
+	self.radioButtonC = tk.Radiobutton(self,anchor='w',textvariable=self.optionC, variable = self.selected_answer, value = self.optionC)
+	self.radioButtonD = tk.Radiobutton(self,anchor='w',textvariable=self.optionD, variable = self.selected_answer, value = self.optionD)
 	
 	#Creating the labels for options and questions
-	self.label_question = tk.Label(self,text='Demo Question')
+	self.label_question = tk.Label(self,textvariable=self.question)
 	self.label_score = tk.Label(self,text='Score:')
 	self.label_score_value = tk.Label(self,textvariable=self.score,anchor='e')
 
 	#Packing the widgets in the grid
-	self.label_question.grid(column=3,row=1,columnspan=2,sticky=tk.N+tk.S+tk.E+tk.W)
+	self.label_question.grid(column=3,row=1,columnspan=4,sticky=tk.N+tk.S+tk.E+tk.W)
 
 	self.label_score.grid(column=7,row=3,sticky=tk.N+tk.S+tk.E+tk.W)
 	self.label_score_value.grid(column=8,row=3,sticky=tk.N+tk.S+tk.E+tk.W)
@@ -64,6 +102,8 @@ class Application(tk.Frame):
 
     def test(self):
         self.nextButton.grid(column=3,row=1)
+
+        
 
 def SplashScreen():
     root = tk.Tk()

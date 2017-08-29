@@ -17,7 +17,7 @@
 			"category": "Entertainment: Video Games",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "Which company developed the video game &quot;Borderlands&quot;?",
+			"question": "Which company developed the video game 'Borderlands'?",
 			"correct_answer": "Gearbox Software",
 			"incorrect_answers": [
 				"2K Games",
@@ -29,7 +29,7 @@
 			"category": "Entertainment: Music",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "Who had a 1973 hit with the song &#039;Hocus Pocus&#039;?",
+			"question": "Who had a 1973 hit with the song 'Hocus Pocus'?",
 			"correct_answer": "Focus",
 			"incorrect_answers": [
 				"Pilot",
@@ -41,7 +41,7 @@
 			"category": "Entertainment: Cartoon & Animations",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "Which &quot;Toy Story&quot; character was voiced by Don Rickles?",
+			"question": "Which 'Toy Story' character was voiced by Don Rickles?",
 			"correct_answer": "Mr. Potato Head",
 			"incorrect_answers": [
 				"Slinky Dog",
@@ -89,7 +89,7 @@
 			"category": "Entertainment: Music",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "Who is the Pink Floyd song &quot;Shine On You Crazy Diamond&quot; written about?",
+			"question": "Who is the Pink Floyd song 'Shine On You Crazy Diamond' written about?",
 			"correct_answer": "Syd Barrett",
 			"incorrect_answers": [
 				"John Lennon",
@@ -101,7 +101,7 @@
 			"category": "Science: Computers",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "When was the programming language &quot;C#&quot; released?",
+			"question": "When was the programming language 'C#' released?",
 			"correct_answer": "2000",
 			"incorrect_answers": [
 				"1998",
@@ -125,7 +125,7 @@
 			"category": "Sports",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "Which Formula One driver was nicknamed &#039;The Professor&#039;?",
+			"question": "Which Formula One driver was nicknamed 'The Professor'?",
 			"correct_answer": "Alain Prost",
 			"incorrect_answers": [
 				"Ayrton Senna",
@@ -161,7 +161,7 @@
 			"category": "Entertainment: Books",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "What was the name of the Mysterious Island, in Jules Verne&#039;s &quot;The Mysterious Island&quot;?",
+			"question": "What was the name of the Mysterious Island, in Jules Verne's 'The Mysterious Island'?",
 			"correct_answer": "Lincoln Island",
 			"incorrect_answers": [
 				"Vulcania Island",
@@ -173,7 +173,7 @@
 			"category": "Mythology",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "Neptune&#039;s greek name was...",
+			"question": "Neptune's greek name was...",
 			"correct_answer": "Poseidon",
 			"incorrect_answers": [
 				"Ares",
@@ -197,19 +197,19 @@
 			"category": "History",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "According to scholarly estimates, what percentage of the world population at the time died due to Tamerlane&#039;s conquests?",
+			"question": "According to scholarly estimates, what percentage of the world population at the time died due to Tamerlane's conquests?",
 			"correct_answer": "5%",
 			"incorrect_answers": [
 				"1%",
 				"3%",
-				"&lt;1%"
+				"<1%"
 			]
 		},
 		{
 			"category": "Entertainment: Video Games",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "Which of these weapons is NOT available to the Terrorist team in the game, &quot;Counter-Strike: Global Offensive&quot;?",
+			"question": "Which of these weapons is NOT available to the Terrorist team in the game, 'Counter-Strike: Global Offensive'?",
 			"correct_answer": "SCAR-20",
 			"incorrect_answers": [
 				"SG 550",
@@ -269,7 +269,7 @@
 			"category": "Entertainment: Film",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "In the 1994 movie &quot;Speed&quot;, what is the minimum speed the bus must go to prevent to bomb from exploding?",
+			"question": "In the 1994 movie 'Speed', what is the minimum speed the bus must go to prevent to bomb from exploding?",
 			"correct_answer": "50 mph",
 			"incorrect_answers": [
 				"60 mph",
@@ -305,7 +305,7 @@
 			"category": "Entertainment: Video Games",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "Capcom&#039;s survival horror title Dead Rising, canonically starts on what day of September 2006?",
+			"question": "Capcom's survival horror title Dead Rising, canonically starts on what day of September 2006?",
 			"correct_answer": "September 19th",
 			"incorrect_answers": [
 				"September 21st",
@@ -317,10 +317,10 @@
 			"category": "Entertainment: Video Games",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "What type of genre is the controversial 2015 game &quot;Hatred&quot;?",
-			"correct_answer": "Shoot &#039;Em Up",
+			"question": "What type of genre is the controversial 2015 game 'Hatred'?",
+			"correct_answer": "Shoot 'Em Up",
 			"incorrect_answers": [
-				"Point &amp; Click",
+				"Point & Click",
 				"MMORPG",
 				"Simulation"
 			]
@@ -329,7 +329,7 @@
 			"category": "Entertainment: Musicals & Theatres",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "In Jeff Wayne&#039;s Musical Version of War of the Worlds, the chances of anything coming from Mars are...",
+			"question": "In Jeff Wayne's Musical Version of War of the Worlds, the chances of anything coming from Mars are...",
 			"correct_answer": "A million to one",
 			"incorrect_answers": [
 				"A billion to one",
@@ -341,7 +341,7 @@
 			"category": "Entertainment: Video Games",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "What name does the little headcrab in &quot;Half Life 2&quot; have?",
+			"question": "What name does the little headcrab in 'Half Life 2' have?",
 			"correct_answer": "Lamarr",
 			"incorrect_answers": [
 				"Jumperr",
@@ -389,7 +389,7 @@
 			"category": "Entertainment: Japanese Anime & Manga",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "What year did the anime &quot;Himouto! Umaru-chan&quot; air?",
+			"question": "What year did the anime 'Himouto! Umaru-chan' air?",
 			"correct_answer": "2015",
 			"incorrect_answers": [
 				"2014",
@@ -413,7 +413,7 @@
 			"category": "Vehicles",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "Volkswagen&#039;s legendary VR6 engine has cylinders positioned at what degree angle?",
+			"question": "Volkswagen's legendary VR6 engine has cylinders positioned at what degree angle?",
 			"correct_answer": "15 Degree",
 			"incorrect_answers": [
 				"30 Degree",
@@ -425,11 +425,11 @@
 			"category": "Entertainment: Video Games",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "In the Half-Life franchise, what is the real name of the &quot;gravity gun&quot;?",
+			"question": "In the Half-Life franchise, what is the real name of the 'gravity gun'?",
 			"correct_answer": "Zero-Point Energy Field Manipulator",
 			"incorrect_answers": [
 				"Universal Gravity Manipulation Device",
-				"Isaac Newton&#039;s Theory Disprover",
+				"Isaac Newton's Theory Disprover",
 				"Quantum Energy Displacement Modifier"
 			]
 		},
@@ -521,7 +521,7 @@
 			"category": "Entertainment: Television",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "How many seasons did the TV show &quot;Donkey Kong Country&quot; last?",
+			"question": "How many seasons did the TV show 'Donkey Kong Country' last?",
 			"correct_answer": "2",
 			"incorrect_answers": [
 				"1",
@@ -562,7 +562,7 @@
 			"incorrect_answers": [
 				"Danganronpa 2: Goodbye Despair",
 				"Danganronpa V3: Killing Harmony",
-				"Danganronpa 3: The End of Hope&#039;s Peak High School"
+				"Danganronpa 3: The End of Hope's Peak High School"
 			]
 		},
 		{
@@ -581,7 +581,7 @@
 			"category": "Sports",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "Who won the &quot;Champions League&quot; in 1999?",
+			"question": "Who won the 'Champions League' in 1999?",
 			"correct_answer": "Manchester United",
 			"incorrect_answers": [
 				"Barcelona",
@@ -593,7 +593,7 @@
 			"category": "Entertainment: Cartoon & Animations",
 			"type": "multiple",
 			"difficulty": "medium",
-			"question": "In &quot;The Simpsons&quot;, where did Homer and Marge first meet?",
+			"question": "In 'The Simpsons', where did Homer and Marge first meet?",
 			"correct_answer": "At Summer Camp",
 			"incorrect_answers": [
 				"At High School",
