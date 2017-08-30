@@ -5,58 +5,93 @@ import random
 class Application(tk.Frame):
 
     def __init__(self, master=None):
+	'''
+	Call to the constructor when the object is created.
+	Variables initialized and set the grid as per need.
+	'''
         tk.Frame.__init__(self, master)
         self.grid(column=8,rows=8,sticky=tk.N+tk.S+tk.E+tk.W)
 	self.grid_rowconfigure(0,weight=1)
 	self.grid_columnconfigure(0,weight=1)
 	# declaring variables to store question and answer
-        self.optionA = tk.StringVar()
-	self.optionB = tk.StringVar()
-	self.optionC = tk.StringVar()
-	self.optionD = tk.StringVar()
-	self.selected_answer = tk.StringVar()
-	self.correct_answer = ""
-	self.question = tk.StringVar()
-	self.score = tk.IntVar()
+        self.optionA = tk.StringVar() # control variable for option A
+	self.optionB = tk.StringVar() # control variable for option B
+	self.optionC = tk.StringVar() # control variable for option C
+	self.optionD = tk.StringVar() # control variable for option D
+	self.selected_answer = tk.StringVar() # variable to get the selected answer
+	self.correct_answer = "" # to store the correct answer before randomizing options
+	self.question = tk.StringVar() # control variable for the question to be loaded
 	self.file = open("questions.json","r")
 	self.questions = json.loads(self.file.read())
 	self.question_index = []
-	self.score=0
+	self.score = tk.IntVar() # to hold the score 
         self.createWidgets() # call to create the necessary widgets
+	self.load_question() # load the first question
+
+    def set_ans(self,answer):
+	'''
+	Function to set the 'selected_answer' variable to the selected option label to compare with correct answer later.
+	Args: answer - gets the option number which calls this function.
+	'''
+	if answer==1:
+	    self.selected_answer = self.optionA.get()
+	elif answer==2:
+	    self.selected_answer = self.optionB.get()
+	elif answer == 3:
+	    self.selected_answer = self.optionC.get()
+	elif answer == 4:
+	    self.selected_answer = self.optionD.get()
 
     def validate_ans(self):
+	'''
+	Function to validate the selected answer with the correct answer. If they match, increase the score by 5.
+	'''
 	print "In Validate answer:"
-	print "selected:",str(self.selected_answer.get())
+	print "selected:",self.selected_answer
 	print "Correct:",self.correct_answer
-        if str(self.selected_answer.get()) == (self.correct_answer):
-	    self.score=self.score+5
+	self.py_var = ["PY_VAR1","PY_VAR2","PY_VAR3","PY_VAR4"]
+        if (self.selected_answer) == (self.correct_answer):
+	    self.score.set(int(self.score.get()) + 5)
 	    print "Correct!"
+	elif str(self.selected_answer) in self.py_var :
+	    print "IN py var if"
+	    pass
+	else:
+	    self.score.set(int(self.score.get()) - 5)
+	    print "Correct!"
+	   
 	
 
     def load_question(self):
-	self.validate_ans()
-        randomindex = random.randint(0,len(self.questions["results"])-1)
-        #self.question.set('Next Clicked')
-        if randomindex not in self.question_index:
-	    self.question_index.append(randomindex)
+	'''
+	Function to load a new question set with options. The question is randomly picked from the JSON file for questions.
+	The options to that questions are also randomized and loaded.
+	'''
+	self.validate_ans() # call to check the answer before loading the next question
+        randomindex = random.randint(0,len(self.questions["results"])-1) # generate random index to be picked from list
+        if randomindex not in self.question_index: # only proceed if the question has not already been picked up.
+	    self.question_index.append(randomindex) # keep a track of the question indices.
 	    pass
 	else:
             randomindex = random.randint(0,len(self.questions["results"])-1)
 	    self.question_index.append(randomindex)
 	print "Debug:"
-        print self.questions["results"][randomindex]["question"]
-	self.correct_answer = self.questions["results"][randomindex]["correct_answer"]
+        print self.questions["results"][randomindex]["question"] 
+	self.correct_answer = self.questions["results"][randomindex]["correct_answer"] # parse the correct answer from JSON file and store it.
 	print self.correct_answer
-	self.answers = self.questions["results"][randomindex]["incorrect_answers"]
-	self.answers.append(self.correct_answer)
-        self.question.set(self.questions["results"][randomindex]["question"])
-	self.optionA.set(self.answers.pop(random.randrange(len(self.answers))))
+	self.answers = self.questions["results"][randomindex]["incorrect_answers"] # parse the other incorrect answers
+	self.answers.append(self.correct_answer) # add all the answers to the list. 
+        self.question.set(self.questions["results"][randomindex]["question"]) # set the question label
+	self.optionA.set(self.answers.pop(random.randrange(len(self.answers)))) # randomly set the option label from the answers list and then remove from that list to avoid repetition
 	self.optionB.set(self.answers.pop(random.randrange(len(self.answers))))
 	self.optionC.set(self.answers.pop(random.randrange(len(self.answers))))
 	self.optionD.set(self.answers.pop(random.randrange(len(self.answers))))
 	
         
     def createWidgets(self):
+	'''
+	Function that creates all the necessary Tkinter widgets. All the widgets are specified here while creation.
+	'''
 	top = self.winfo_toplevel()
 	top.rowconfigure(0,weight=1)
 	top.columnconfigure(0, weight=1)
@@ -68,7 +103,6 @@ class Application(tk.Frame):
 	self.optionB.set('Hello B!')
 	self.optionC.set('Hello C!')
 	self.optionD.set('Hello D!')
-#	self.score.set(0)
 	self.question.set('Demo Question')
 
 	#Creating the buttons
@@ -76,10 +110,10 @@ class Application(tk.Frame):
         self.nextButton = tk.Button(self, text='Next', command=self.load_question)
 
 	#Creating Radio buttons for options
-	self.radioButtonA = tk.Radiobutton(self,anchor='w',textvariable=self.optionA, variable = self.selected_answer, value = self.optionA)
-	self.radioButtonB = tk.Radiobutton(self,anchor='w',textvariable=self.optionB, variable = self.selected_answer, value = self.optionB)
-	self.radioButtonC = tk.Radiobutton(self,anchor='w',textvariable=self.optionC, variable = self.selected_answer, value = self.optionC)
-	self.radioButtonD = tk.Radiobutton(self,anchor='w',textvariable=self.optionD, variable = self.selected_answer, value = self.optionD)
+	self.radioButtonA = tk.Radiobutton(self,anchor='w',textvariable=self.optionA, variable = self.selected_answer, value = 'A',command = lambda: self.set_ans(1)) # the radio button call 'set_ans()' with the number to set the 'selected_answer' variable
+	self.radioButtonB = tk.Radiobutton(self,anchor='w',textvariable=self.optionB, variable = self.selected_answer, value = 'B', command = lambda: self.set_ans(2))
+	self.radioButtonC = tk.Radiobutton(self,anchor='w',textvariable=self.optionC, variable = self.selected_answer, value = 'C', command = lambda: self.set_ans(3))
+	self.radioButtonD = tk.Radiobutton(self,anchor='w',textvariable=self.optionD, variable = self.selected_answer, value = 'D', command = lambda: self.set_ans(4))
 	
 	#Creating the labels for options and questions
 	self.label_question = tk.Label(self,textvariable=self.question)
@@ -122,6 +156,6 @@ def SplashScreen():
 
 
 #SplashScreen()
-app = Application()
+app = Application() # creating the object for Application class()
 app.master.title('PyQuiz!')
 app.mainloop()
