@@ -1,6 +1,7 @@
 import Tkinter as tk
 import json
 import random
+import tkMessageBox
 
 class Application(tk.Frame):
 
@@ -9,10 +10,11 @@ class Application(tk.Frame):
 	Call to the constructor when the object is created.
 	Variables initialized and set the grid as per need.
 	'''
+	tkMessageBox.showinfo('Welcome!','Welcome to PyQuiz!\nA quiz built in Python to test your general knowledge.')
         tk.Frame.__init__(self, master)
-        self.grid(column=8,rows=8,sticky=tk.N+tk.S+tk.E+tk.W)
-	self.grid_rowconfigure(0,weight=1)
-	self.grid_columnconfigure(0,weight=1)
+        self.grid()#column=8,rows=8,sticky=tk.N+tk.S+tk.E+tk.W)
+	#self.grid_rowconfigure(0,weight=1)
+	#self.grid_columnconfigure(0,weight=1)
 	# declaring variables to store question and answer
         self.optionA = tk.StringVar() # control variable for option A
 	self.optionB = tk.StringVar() # control variable for option B
@@ -93,11 +95,12 @@ class Application(tk.Frame):
 	Function that creates all the necessary Tkinter widgets. All the widgets are specified here while creation.
 	'''
 	top = self.winfo_toplevel()
-	top.rowconfigure(0,weight=1)
-	top.columnconfigure(0, weight=1)
+	top.geometry("750x150")
+	#top.rowconfigure(0,weight=1)
+	#top.columnconfigure(0, weight=1)
 
-	self.rowconfigure(0,weight=1)
-	self.columnconfigure(0, weight=1)
+	#self.rowconfigure(0,weight=1)
+	#self.columnconfigure(0, weight=1)
 
 	self.optionA.set('Hello A!')
 	self.optionB.set('Hello B!')
