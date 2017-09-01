@@ -12,9 +12,7 @@ class Application(tk.Frame):
 	'''
 	tkMessageBox.showinfo('Welcome!','Welcome to PyQuiz!\nA quiz built in Python to test your general knowledge.')
         tk.Frame.__init__(self, master)
-        self.grid()#column=8,rows=8,sticky=tk.N+tk.S+tk.E+tk.W)
-	#self.grid_rowconfigure(0,weight=1)
-	#self.grid_columnconfigure(0,weight=1)
+        self.grid()
 	# declaring variables to store question and answer
         self.optionA = tk.StringVar() # control variable for option A
 	self.optionB = tk.StringVar() # control variable for option B
@@ -29,6 +27,16 @@ class Application(tk.Frame):
 	self.score = tk.IntVar() # to hold the score 
         self.createWidgets() # call to create the necessary widgets
 	self.load_question() # load the first question
+
+    def confirm_quit(self):
+	'''
+	Function to confirm quit when the player presses Quit Button. If yes, Quit the application, If no, return to the game.
+	'''
+	choice = tkMessageBox.askyesno('Quit Application','Are you sure you wish to stop playing PyQuiz! ?')
+	if choice == True:
+		self.quit()
+	elif choice == False:
+		pass
 
     def set_ans(self,answer):
 	'''
@@ -52,7 +60,7 @@ class Application(tk.Frame):
 	print "selected:",self.selected_answer
 	print "Correct:",self.correct_answer
 	self.py_var = ["PY_VAR1","PY_VAR2","PY_VAR3","PY_VAR4"]
-        if (self.selected_answer) == (self.correct_answer):
+        if str(self.selected_answer) == str(self.correct_answer):
 	    self.score.set(int(self.score.get()) + 5)
 	    print "Correct!"
 	elif str(self.selected_answer) in self.py_var :
@@ -88,6 +96,10 @@ class Application(tk.Frame):
 	self.optionB.set(self.answers.pop(random.randrange(len(self.answers))))
 	self.optionC.set(self.answers.pop(random.randrange(len(self.answers))))
 	self.optionD.set(self.answers.pop(random.randrange(len(self.answers))))
+	self.radioButtonA.deselect()
+	self.radioButtonB.deselect()
+	self.radioButtonC.deselect()
+	self.radioButtonD.deselect()
 	
         
     def createWidgets(self):
@@ -96,11 +108,7 @@ class Application(tk.Frame):
 	'''
 	top = self.winfo_toplevel()
 	top.geometry("750x150")
-	#top.rowconfigure(0,weight=1)
-	#top.columnconfigure(0, weight=1)
-
-	#self.rowconfigure(0,weight=1)
-	#self.columnconfigure(0, weight=1)
+#	top.configure(background="white")
 
 	self.optionA.set('Hello A!')
 	self.optionB.set('Hello B!')
@@ -109,14 +117,31 @@ class Application(tk.Frame):
 	self.question.set('Demo Question')
 
 	#Creating the buttons
-        self.quitButton = tk.Button(self, text='Quit', command=self.quit)
+        self.quitButton = tk.Button(self, text='Quit', command=self.confirm_quit)
         self.nextButton = tk.Button(self, text='Next', command=self.load_question)
 
 	#Creating Radio buttons for options
-	self.radioButtonA = tk.Radiobutton(self,anchor='w',textvariable=self.optionA, variable = self.selected_answer, value = 'A',command = lambda: self.set_ans(1)) # the radio button call 'set_ans()' with the number to set the 'selected_answer' variable
-	self.radioButtonB = tk.Radiobutton(self,anchor='w',textvariable=self.optionB, variable = self.selected_answer, value = 'B', command = lambda: self.set_ans(2))
-	self.radioButtonC = tk.Radiobutton(self,anchor='w',textvariable=self.optionC, variable = self.selected_answer, value = 'C', command = lambda: self.set_ans(3))
-	self.radioButtonD = tk.Radiobutton(self,anchor='w',textvariable=self.optionD, variable = self.selected_answer, value = 'D', command = lambda: self.set_ans(4))
+	self.radioButtonA = tk.Radiobutton(self,anchor='w',
+					textvariable=self.optionA, 
+					variable = self.selected_answer, 
+					value = 'A',
+					command = lambda: self.set_ans(1)) # the radio button call 'set_ans()' with the number to set the 'selected_answer' variable
+	self.radioButtonB = tk.Radiobutton(self,anchor='w',
+					textvariable=self.optionB, 
+					variable = self.selected_answer,
+					value = 'B', 
+					command = lambda: self.set_ans(2))
+	self.radioButtonC = tk.Radiobutton(self,anchor='w',
+					textvariable=self.optionC, 
+					variable = self.selected_answer, 
+					value = 'C', 
+					command = lambda: self.set_ans(3))
+	self.radioButtonD = tk.Radiobutton(self,anchor='w',
+					textvariable=self.optionD,
+					variable = self.selected_answer,
+					value = 'D', 
+					command = lambda: self.set_ans(4))
+
 	
 	#Creating the labels for options and questions
 	self.label_question = tk.Label(self,textvariable=self.question)
@@ -124,41 +149,20 @@ class Application(tk.Frame):
 	self.label_score_value = tk.Label(self,textvariable=self.score,anchor='e')
 
 	#Packing the widgets in the grid
-	self.label_question.grid(column=3,row=1,columnspan=4,sticky=tk.N+tk.S+tk.E+tk.W)
+	self.label_question.grid(column=3,row=1,columnspan=4)
 
-	self.label_score.grid(column=7,row=3,sticky=tk.N+tk.S+tk.E+tk.W)
-	self.label_score_value.grid(column=8,row=3,sticky=tk.N+tk.S+tk.E+tk.W)
-        
-	self.radioButtonA.grid(column=2,row=4,sticky=tk.N+tk.S+tk.E+tk.W)
-        self.radioButtonB.grid(column=5,row=4,sticky=tk.N+tk.S+tk.E+tk.W)
+	self.label_score.grid(column=7,row=3)
+	self.label_score_value.grid(column=8,row=3,sticky=tk.N+tk.S+tk.W+tk.E)
+	self.radioButtonA.grid(column=2,row=4,sticky=tk.N+tk.S+tk.W+tk.E)
+        self.radioButtonB.grid(column=5,row=4,sticky=tk.N+tk.S+tk.W+tk.E)
         self.radioButtonC.grid(column=2,row=6,sticky=tk.N+tk.S+tk.E+tk.W)
         self.radioButtonD.grid(column=5,row=6,sticky=tk.N+tk.S+tk.E+tk.W)
         
-	self.quitButton.grid(column=4,row=8,sticky=tk.N+tk.S+tk.E+tk.W)
-	self.nextButton.grid(column=3,row=8,sticky=tk.N+tk.S+tk.E+tk.W)
-
-    def test(self):
-        self.nextButton.grid(column=3,row=1)
+	self.quitButton.grid(column=4,row=8)
+	self.nextButton.grid(column=3,row=8)
 
         
 
-def SplashScreen():
-    root = tk.Tk()
-    root.overrideredirect(True)
-    width = root.winfo_screenwidth()
-    height = root.winfo_screenheight()
-    root.geometry('%dx%d+%d+%d'%(width*0.8,height*0.8,width*0.1,height*0.1))
-
-    image_file = 'test.gif'
-    image = tk.PhotoImage(file=image_file)
-    canvas = tk.Canvas(root, height=height*0.8, width=width*0.8, bg="brown")
-    canvas.create_image(width*0.8/2, height*0.8/2, image=image)
-    canvas.grid()
-# show the splash screen for 5000 milliseconds then destroy
-    root.after(5000, root.destroy)
-
-
-#SplashScreen()
 app = Application() # creating the object for Application class()
 app.master.title('PyQuiz!')
 app.mainloop()
