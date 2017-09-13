@@ -107,7 +107,12 @@ class Application(tk.Frame):
 	Function that creates all the necessary Tkinter widgets. All the widgets are specified here while creation.
 	'''
 	top = self.winfo_toplevel()
-	top.geometry("750x150")
+	top.geometry("800x200")
+        top.resizable(True,True)
+	top.grid_columnconfigure(0,weight=1)
+	top.grid_columnconfigure(9,weight=1)
+	top.grid_rowconfigure(0,weight=1)
+	top.grid_rowconfigure(9,weight=1)
 #	top.configure(background="white")
 
 	self.optionA.set('Hello A!')

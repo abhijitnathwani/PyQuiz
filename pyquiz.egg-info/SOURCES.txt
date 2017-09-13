@@ -1,0 +1,5 @@
+setup.py
+pyquiz.egg-info/PKG-INFO
+pyquiz.egg-info/SOURCES.txt
+pyquiz.egg-info/dependency_links.txt
+pyquiz.egg-info/top_level.txt
