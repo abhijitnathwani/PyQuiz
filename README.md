@@ -9,7 +9,7 @@ To install PyQuiz! to your system,
 
 `pip install py-quiz`
 
-To run PyQuiz! just fire the command `py-quiz` in your terminal.
+
 
 ## Things To-Do:
 * ~~Create basic application~~
