@@ -12,21 +12,20 @@ To install PyQuiz! to your system,
 To run PyQuiz! just fire the command `py-quiz` in your terminal.
 
 ## Things To-Do:
-- ~~Create basic application~~
-- ~~Add Menu bar~~
-- ~~Add score counter~~
-- ~~Add questions from JSON file.~~
-- ~~Create a `pip` installer package~~
-- ~~Confirm quit option~~
-- Resize Window as per question length. ( If somebody can help me with this, it'll be great!)
+* ~~Create basic application~~
+* ~~Add score counter~~
+* ~~Add questions from JSON file.~~
+* ~~Create a `pip` installer package~~
+* ~~Confirm quit option~~
+* Resize Window as per question length. ( If somebody can help me with this, it'll be great!)
 
-##### Glimpse of PyQuiz
+## Glimpse of PyQuiz
 ![Welcome](https://user-images.githubusercontent.com/5513984/30362359-4807db3e-9879-11e7-9343-83af97459918.png)
 ![Main](https://user-images.githubusercontent.com/5513984/30362368-4cf98282-9879-11e7-86f9-d99b606ad373.png)
 ![About](https://user-images.githubusercontent.com/5513984/30362378-5109a104-9879-11e7-9549-a47f26a2772f.png)
 ![Quit](https://user-images.githubusercontent.com/5513984/30362383-54f0b104-9879-11e7-863e-c10e662e871f.png)
 
-##### Info
+## Info
 
 PyQuiz is maintained at https://github.com/abhijitnathwani/PyQuiz/
-Any questions/suggestions are welcome. Feel free to drop an email: abhijit[dot]nathwani[at]gmail[dot]com
+Any questions/suggestions are welcome. Feel free to drop an email: abhijit[dot]nathwani[at]gmail[dot]com or raise and issue with the repo.
