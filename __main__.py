@@ -5,6 +5,11 @@ import json
 import random
 import tkMessageBox
 
+def main(args=None):
+    app = Application() # creating the object for Application class()
+    app.master.title('PyQuiz!')
+    app.mainloop()
+
 class Application(tk.Frame):
 
     def __init__(self, master=None):
@@ -190,7 +195,5 @@ class Application(tk.Frame):
 	self.nextButton.grid(column=3,row=8)
 
         
-
-app = Application() # creating the object for Application class()
-app.master.title('PyQuiz!')
-app.mainloop()
+if __name__ == "__main__":
+    main()

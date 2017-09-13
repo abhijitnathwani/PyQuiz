@@ -16,6 +16,11 @@ setup(
     author_email='abhijit.nathwani@gmail.com',
     LICENSE='MIT',
     url='https://github.com/abhijitnathwani/PyQuiz',
+    entry_points={
+        'console_scripts':[
+			'py-quiz = __main__:main'
+			]
+    },
     keywords='pyquiz tkinter'
 
 )
