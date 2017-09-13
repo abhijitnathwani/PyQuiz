@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import Tkinter as tk
 import json
 import random
@@ -27,6 +29,19 @@ class Application(tk.Frame):
 	self.score = tk.IntVar() # to hold the score 
         self.createWidgets() # call to create the necessary widgets
 	self.load_question() # load the first question
+
+    def new_game(self):
+	'''
+	When the New Game button from the menu is clicked, the game resets the score to 0 and a new question is loaded.
+	'''
+	self.load_question()
+        self.score.set(0)
+
+    def about(self):
+	'''
+	Load the About Info Box.
+	'''
+        tkMessageBox.showinfo("About PyQuiz!","Welcome to PyQuiz! v0.1\n PyQuiz is developed to explore Tkinter and then started off as a simple application.\nPyQuiz! is maintained at \nhttps://github.com/abhijitnathwani/PyQuiz/ \n\nYour contributions and suggestions are welcome. Feel free to fork and pull changes to PyQuiz! The application is open-source and is open for development.\n\nPyQuiz is developed and maintained by Abhijit Nathwani. For suggestions and changes, feel free to drop an email:\n abhijit[dot]nathwani[at]gmail[dot]com .\n\nInitial Release: Sept '17.")
 
     def confirm_quit(self):
 	'''
@@ -120,6 +135,14 @@ class Application(tk.Frame):
 	self.optionC.set('Hello C!')
 	self.optionD.set('Hello D!')
 	self.question.set('Demo Question')
+
+	#Creating the menu buttons
+	self.menu = tk.Menu(self)
+	self.menubar = tk.Menu(self.menu, tearoff=0)
+	self.menubar.add_command(label="New Game", command=self.new_game)
+	self.menubar.add_command(label="About", command=self.about)
+	self.menubar.add_command(label="Quit", command=self.confirm_quit)
+	top.config(menu=self.menubar)
 
 	#Creating the buttons
         self.quitButton = tk.Button(self, text='Quit', command=self.confirm_quit)
