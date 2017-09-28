@@ -5,6 +5,7 @@ import json
 import random
 import tkMessageBox
 
+
 def main(args=None):
     app = Application() # creating the object for Application class()
     app.master.title('PyQuiz!')
@@ -28,7 +29,7 @@ class Application(tk.Frame):
 	self.selected_answer = tk.StringVar() # variable to get the selected answer
 	self.correct_answer = "" # to store the correct answer before randomizing options
 	self.question = tk.StringVar() # control variable for the question to be loaded
-	self.file = open("questions.json","r")
+	self.file = open("py_quiz/questions.json","r")
 	self.questions = json.loads(self.file.read())
 	self.question_index = []
 	self.score = tk.IntVar() # to hold the score 
@@ -108,7 +109,7 @@ class Application(tk.Frame):
 	print "Debug:"
         print self.questions["results"][randomindex]["question"] 
 	self.correct_answer = self.questions["results"][randomindex]["correct_answer"] # parse the correct answer from JSON file and store it.
-	print self.correct_answer
+	#print self.correct_answer
 	self.answers = self.questions["results"][randomindex]["incorrect_answers"] # parse the other incorrect answers
 	self.answers.append(self.correct_answer) # add all the answers to the list. 
         self.question.set(self.questions["results"][randomindex]["question"]) # set the question label
@@ -194,6 +195,7 @@ class Application(tk.Frame):
 	self.quitButton.grid(column=4,row=8)
 	self.nextButton.grid(column=3,row=8)
 
+print __name__
         
 if __name__ == "__main__":
     main()

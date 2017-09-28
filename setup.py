@@ -13,13 +13,12 @@ setup(
     description='Python based Quiz game.',
     long_description=long_description,
     author='Abhijit Nathwani',
+    packages=['py_quiz'],
     author_email='abhijit.nathwani@gmail.com',
     LICENSE='MIT',
     url='https://github.com/abhijitnathwani/PyQuiz',
     entry_points={
-        'console_scripts':[
-			'py-quiz = __main__:main'
-			]
+        'console_scripts':['py-quiz = py_quiz.__main__:main']
     },
     keywords='pyquiz tkinter'
 
