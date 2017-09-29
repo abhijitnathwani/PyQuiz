@@ -3,11 +3,14 @@ PyQuiz is an interactive quiz game built with Python. The aim was to create and 
 
 The PyQuiz opens up with multiple choice questions and increments your score with 5 as you answer correctly in the game and reduces 5 points for every incorrect answer. It also asks you for your confirmation while exiting the application.
 
+Release: v0.2 
+29th September, 2017.
+
 ## Installation
 
 To install PyQuiz! to your system,
 
-`pip install py-quiz`
+`sudo pip install py-quiz`
 
 ## To Run Py-Quiz
 
