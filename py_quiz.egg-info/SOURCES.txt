@@ -1,7 +1,9 @@
+MANIFEST.in
 README.rst
 setup.py
 py_quiz/__init__.py
 py_quiz/__main__.py
+py_quiz/questions.json
 py_quiz.egg-info/PKG-INFO
 py_quiz.egg-info/SOURCES.txt
 py_quiz.egg-info/dependency_links.txt

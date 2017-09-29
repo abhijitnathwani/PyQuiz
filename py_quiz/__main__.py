@@ -4,7 +4,10 @@ import Tkinter as tk
 import json
 import random
 import tkMessageBox
+import pkg_resources
+import os
 
+QUESTIONS_FILE = pkg_resources.resource_filename('py_quiz','questions.json')
 
 def main(args=None):
     app = Application() # creating the object for Application class()
@@ -29,7 +32,7 @@ class Application(tk.Frame):
 	self.selected_answer = tk.StringVar() # variable to get the selected answer
 	self.correct_answer = "" # to store the correct answer before randomizing options
 	self.question = tk.StringVar() # control variable for the question to be loaded
-	self.file = open("py_quiz/questions.json","r")
+	self.file = open(QUESTIONS_FILE,"r")
 	self.questions = json.loads(self.file.read())
 	self.question_index = []
 	self.score = tk.IntVar() # to hold the score 
@@ -47,7 +50,7 @@ class Application(tk.Frame):
 	'''
 	Load the About Info Box.
 	'''
-        tkMessageBox.showinfo("About PyQuiz!","Welcome to PyQuiz! v0.1\n PyQuiz is developed to explore Tkinter and then started off as a simple application.\nPyQuiz! is maintained at \nhttps://github.com/abhijitnathwani/PyQuiz/ \n\nYour contributions and suggestions are welcome. Feel free to fork and pull changes to PyQuiz! The application is open-source and is open for development.\n\nPyQuiz is developed and maintained by Abhijit Nathwani. For suggestions and changes, feel free to drop an email:\n abhijit[dot]nathwani[at]gmail[dot]com .\n\nInitial Release: Sept '17.")
+        tkMessageBox.showinfo("About PyQuiz!","Welcome to PyQuiz! v0.2\n PyQuiz is developed to explore Tkinter and then started off as a simple application.\nPyQuiz! is maintained at \nhttps://github.com/abhijitnathwani/PyQuiz/ \n\nYour contributions and suggestions are welcome. Feel free to fork and pull changes to PyQuiz! The application is open-source and is open for development.\n\nPyQuiz is developed and maintained by Abhijit Nathwani. For suggestions and changes, feel free to drop an email:\n abhijit[dot]nathwani[at]gmail[dot]com .\n\nInitial Release: Sept '17.")
 
     def confirm_quit(self):
 	'''

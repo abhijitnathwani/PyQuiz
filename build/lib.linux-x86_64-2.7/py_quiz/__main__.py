@@ -4,7 +4,7 @@ import Tkinter as tk
 import json
 import random
 import tkMessageBox
-
+import os
 
 def main(args=None):
     app = Application() # creating the object for Application class()
@@ -29,6 +29,7 @@ class Application(tk.Frame):
 	self.selected_answer = tk.StringVar() # variable to get the selected answer
 	self.correct_answer = "" # to store the correct answer before randomizing options
 	self.question = tk.StringVar() # control variable for the question to be loaded
+	print "Pwd:", os.system("pwd")
 	self.file = open("py_quiz/questions.json","r")
 	self.questions = json.loads(self.file.read())
 	self.question_index = []

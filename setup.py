@@ -9,11 +9,15 @@ with open(path.join(here, 'README.rst')) as f:
 
 setup(
     name='py-quiz',
-    version='0.1.22',
+    version='0.2',
     description='Python based Quiz game.',
     long_description=long_description,
     author='Abhijit Nathwani',
     packages=['py_quiz'],
+    package_data={
+        'py_quiz': ['questions.json'],
+    },
+    include_package_data=True,
     author_email='abhijit.nathwani@gmail.com',
     LICENSE='MIT',
     url='https://github.com/abhijitnathwani/PyQuiz',
