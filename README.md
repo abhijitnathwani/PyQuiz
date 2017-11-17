@@ -25,6 +25,10 @@ Just fire up the command `py-quiz` in your terminal
 * ~~Confirm quit option~~
 * Resize Window as per question length. ( If somebody can help me with this, it'll be great!)
 
+## To Contribute to this project
+
+Check the (Contributing.md)[Contributing.md] file on how to contribute to this open source project.
+
 ## Glimpse of PyQuiz
 ![Welcome](https://user-images.githubusercontent.com/5513984/30362359-4807db3e-9879-11e7-9343-83af97459918.png)
 ![Main](https://user-images.githubusercontent.com/5513984/30362368-4cf98282-9879-11e7-86f9-d99b606ad373.png)
