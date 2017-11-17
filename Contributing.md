@@ -11,7 +11,7 @@ This application is Open Source Software. The software license is MIT.
 ## How do I get an overview of the project?
 
 * Read about the [README File](README.md) for the application
-* If things are unclear, please ask at ######abhijit.nathwani@gmail.com
+* If things are unclear, please ask at abhijit.nathwani@gmail.com
 
 ## What can I do right now?
 
