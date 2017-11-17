@@ -27,7 +27,7 @@ Just fire up the command `py-quiz` in your terminal
 
 ## To Contribute to this project
 
-Check the (Contributing.md)[Contributing.md] file on how to contribute to this open source project.
+Check the [Contributing.md](Contributing.md) file on how to contribute to this open source project.
 
 ## Glimpse of PyQuiz
 ![Welcome](https://user-images.githubusercontent.com/5513984/30362359-4807db3e-9879-11e7-9343-83af97459918.png)
