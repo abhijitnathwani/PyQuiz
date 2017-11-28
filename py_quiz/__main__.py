@@ -35,15 +35,17 @@ class Application(tk.Frame):
 	self.file = open(QUESTIONS_FILE,"r")
 	self.questions = json.loads(self.file.read())
 	self.question_index = []
-	self.score = tk.IntVar() # to hold the score 
-        self.createWidgets() # call to create the necessary widgets
-	self.load_question() # load the first question
+	self.score = tk.IntVar() # to hold the score
+	top = self.winfo_toplevel()
+        self.createWidgets(top) # call to create the necessary widgets
+	self.load_question(top) # load the first question
 
-    def new_game(self):
+
+    def new_game(self,top):
 	'''
 	When the New Game button from the menu is clicked, the game resets the score to 0 and a new question is loaded.
 	'''
-	self.load_question()
+	self.load_question(top)
         self.score.set(0)
 
     def about(self):
@@ -92,11 +94,11 @@ class Application(tk.Frame):
 	    pass
 	else:
 	    self.score.set(int(self.score.get()) - 5)
-	    print "Correct!"
+	    print "Incorrect!"
 	   
 	
 
-    def load_question(self):
+    def load_question(self,top):
 	'''
 	Function to load a new question set with options. The question is randomly picked from the JSON file for questions.
 	The options to that questions are also randomized and loaded.
@@ -116,6 +118,9 @@ class Application(tk.Frame):
 	self.answers = self.questions["results"][randomindex]["incorrect_answers"] # parse the other incorrect answers
 	self.answers.append(self.correct_answer) # add all the answers to the list. 
         self.question.set(self.questions["results"][randomindex]["question"]) # set the question label
+	length=len(self.question.get())  # get the length of the question
+	width=str(100+10*length)	
+	top.geometry(width+"x180")	# change the width of the window according to the length of the question
 	self.optionA.set(self.answers.pop(random.randrange(len(self.answers)))) # randomly set the option label from the answers list and then remove from that list to avoid repetition
 	self.optionB.set(self.answers.pop(random.randrange(len(self.answers))))
 	self.optionC.set(self.answers.pop(random.randrange(len(self.answers))))
@@ -126,12 +131,12 @@ class Application(tk.Frame):
 	self.radioButtonD.deselect()
 	
         
-    def createWidgets(self):
+    def createWidgets(self,top):
 	'''
 	Function that creates all the necessary Tkinter widgets. All the widgets are specified here while creation.
 	'''
-	top = self.winfo_toplevel()
-	top.geometry("800x200")
+	
+	top.geometry("800x180")
         top.resizable(True,True)
 	top.grid_columnconfigure(0,weight=1)
 	top.grid_columnconfigure(9,weight=1)
@@ -148,14 +153,14 @@ class Application(tk.Frame):
 	#Creating the menu buttons
 	self.menu = tk.Menu(self)
 	self.menubar = tk.Menu(self.menu, tearoff=0)
-	self.menubar.add_command(label="New Game", command=self.new_game)
+	self.menubar.add_command(label="New Game", command=lambda: self.new_game(top))
 	self.menubar.add_command(label="About", command=self.about)
 	self.menubar.add_command(label="Quit", command=self.confirm_quit)
 	top.config(menu=self.menubar)
 
 	#Creating the buttons
         self.quitButton = tk.Button(self, text='Quit', command=self.confirm_quit)
-        self.nextButton = tk.Button(self, text='Next', command=self.load_question)
+        self.nextButton = tk.Button(self, text='Next', command=lambda: self.load_question(top))
 
 	#Creating Radio buttons for options
 	self.radioButtonA = tk.Radiobutton(self,anchor='w',
@@ -181,13 +186,14 @@ class Application(tk.Frame):
 
 	
 	#Creating the labels for options and questions
+	
 	self.label_question = tk.Label(self,textvariable=self.question)
 	self.label_score = tk.Label(self,text='Score:')
 	self.label_score_value = tk.Label(self,textvariable=self.score,anchor='e')
 
 	#Packing the widgets in the grid
-	self.label_question.grid(column=3,row=1,columnspan=4)
 
+	self.label_question.grid(column=3,row=1,columnspan=4)
 	self.label_score.grid(column=7,row=3)
 	self.label_score_value.grid(column=8,row=3,sticky=tk.N+tk.S+tk.W+tk.E)
 	self.radioButtonA.grid(column=2,row=4,sticky=tk.N+tk.S+tk.W+tk.E)
