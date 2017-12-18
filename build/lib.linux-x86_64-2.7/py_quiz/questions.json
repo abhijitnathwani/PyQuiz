@@ -1,0 +1,605 @@
+{
+	"response_code": 0,
+	"results": [
+		{
+			"category": "Science: Mathematics",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "In a complete graph G, which has 12 vertices, how many edges are there?",
+			"correct_answer": "66",
+			"incorrect_answers": [
+				"67",
+				"34",
+				"11"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which company developed the video game 'Borderlands'?",
+			"correct_answer": "Gearbox Software",
+			"incorrect_answers": [
+				"2K Games",
+				"Activision",
+				"Rockstar Games"
+			]
+		},
+		{
+			"category": "Entertainment: Music",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Who had a 1973 hit with the song 'Hocus Pocus'?",
+			"correct_answer": "Focus",
+			"incorrect_answers": [
+				"Pilot",
+				"Rush",
+				"AC/DC"
+			]
+		},
+		{
+			"category": "Entertainment: Cartoon & Animations",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which 'Toy Story' character was voiced by Don Rickles?",
+			"correct_answer": "Mr. Potato Head",
+			"incorrect_answers": [
+				"Slinky Dog",
+				"Hamm",
+				"Rex"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Just Cause 2 was mainly set in what fictional Southeast Asian island country?",
+			"correct_answer": "Panau",
+			"incorrect_answers": [
+				"Davao",
+				"Macau",
+				"Palau"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which of these games was the earliest known first-person shooter with a known time of publication?",
+			"correct_answer": "Spasim",
+			"incorrect_answers": [
+				"Doom",
+				"Wolfenstein",
+				"Quake"
+			]
+		},
+		{
+			"category": "Politics",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which president erased the national debt of the United States?",
+			"correct_answer": "Andrew Jackson",
+			"incorrect_answers": [
+				"Ronald Reagan",
+				"John F. Kennedy",
+				"Franklin Roosevelt"
+			]
+		},
+		{
+			"category": "Entertainment: Music",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Who is the Pink Floyd song 'Shine On You Crazy Diamond' written about?",
+			"correct_answer": "Syd Barrett",
+			"incorrect_answers": [
+				"John Lennon",
+				"David Gilmour",
+				"Floyd"
+			]
+		},
+		{
+			"category": "Science: Computers",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "When was the programming language 'C#' released?",
+			"correct_answer": "2000",
+			"incorrect_answers": [
+				"1998",
+				"1999",
+				"2001"
+			]
+		},
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "In which 1955 film does Frank Sinatra play Nathan Detroit?",
+			"correct_answer": "Guys and Dolls",
+			"incorrect_answers": [
+				"Anchors Aweigh",
+				"From Here to Eternity",
+				"High Society"
+			]
+		},
+		{
+			"category": "Sports",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which Formula One driver was nicknamed 'The Professor'?",
+			"correct_answer": "Alain Prost",
+			"incorrect_answers": [
+				"Ayrton Senna",
+				"Niki Lauda",
+				"Emerson Fittipaldi"
+			]
+		},
+		{
+			"category": "Science: Mathematics",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What is the Roman numeral for 500?",
+			"correct_answer": "D",
+			"incorrect_answers": [
+				"L",
+				"C",
+				"X"
+			]
+		},
+		{
+			"category": "General Knowledge",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which language is NOT Indo-European?",
+			"correct_answer": "Hungarian",
+			"incorrect_answers": [
+				"Russian",
+				"Greek",
+				"Latvian"
+			]
+		},
+		{
+			"category": "Entertainment: Books",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What was the name of the Mysterious Island, in Jules Verne's 'The Mysterious Island'?",
+			"correct_answer": "Lincoln Island",
+			"incorrect_answers": [
+				"Vulcania Island",
+				"Prometheus Island",
+				"Neptune Island"
+			]
+		},
+		{
+			"category": "Mythology",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Neptune's greek name was...",
+			"correct_answer": "Poseidon",
+			"incorrect_answers": [
+				"Ares",
+				"Zeus",
+				"Apollo"
+			]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "In what year was the last natural case of smallpox documented?",
+			"correct_answer": "1977",
+			"incorrect_answers": [
+				"1982",
+				"1980",
+				"1990"
+			]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "According to scholarly estimates, what percentage of the world population at the time died due to Tamerlane's conquests?",
+			"correct_answer": "5%",
+			"incorrect_answers": [
+				"1%",
+				"3%",
+				"<1%"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which of these weapons is NOT available to the Terrorist team in the game, 'Counter-Strike: Global Offensive'?",
+			"correct_answer": "SCAR-20",
+			"incorrect_answers": [
+				"SG 550",
+				"CZ-75",
+				"XM1014"
+			]
+		},
+		{
+			"category": "General Knowledge",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "In 2013 how much money was lost by Nigerian scams?",
+			"correct_answer": "$12.7 Billion",
+			"incorrect_answers": [
+				"$95 Million",
+				"$956 Million",
+				"$2.7 Billion"
+			]
+		},
+		{
+			"category": "Entertainment: Comics",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What is the name of the comic about a young boy, and a tiger who is actually a stuffed animal?",
+			"correct_answer": "Calvin and Hobbes",
+			"incorrect_answers": [
+				"Winnie the Pooh",
+				"Albert and Pogo",
+				"Peanuts"
+			]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "When was the United States National Security Agency established?",
+			"correct_answer": "November 4, 1952",
+			"incorrect_answers": [
+				"July 26, 1908",
+				" July 1, 1973",
+				" November 25, 2002"
+			]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What is the name of the US Navy spy ship which was attacked and captured by North Korean forces in 1968?",
+			"correct_answer": "USS Pueblo",
+			"incorrect_answers": [
+				"USS North Carolina",
+				"USS Constitution",
+				"USS Indianapolis"
+			]
+		},
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "In the 1994 movie 'Speed', what is the minimum speed the bus must go to prevent to bomb from exploding?",
+			"correct_answer": "50 mph",
+			"incorrect_answers": [
+				"60 mph",
+				"40 mph",
+				"70 mph"
+			]
+		},
+		{
+			"category": "Sports",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which team was the 2014-2015 NBA Champions?",
+			"correct_answer": "Golden State Warriors",
+			"incorrect_answers": [
+				"Cleveland Cavaliers",
+				"Houston Rockets",
+				"Atlanta Hawks"
+			]
+		},
+		{
+			"category": "Entertainment: Music",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Pink Floyd made this song for their previous lead singer Syd Barrett.",
+			"correct_answer": "Shine On You Crazy Diamond",
+			"incorrect_answers": [
+				"Wish You Were Here",
+				"Have A Cigar",
+				"Welcome to the Machine"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Capcom's survival horror title Dead Rising, canonically starts on what day of September 2006?",
+			"correct_answer": "September 19th",
+			"incorrect_answers": [
+				"September 21st",
+				"September 30th",
+				"September 14th"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What type of genre is the controversial 2015 game 'Hatred'?",
+			"correct_answer": "Shoot 'Em Up",
+			"incorrect_answers": [
+				"Point & Click",
+				"MMORPG",
+				"Simulation"
+			]
+		},
+		{
+			"category": "Entertainment: Musicals & Theatres",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "In Jeff Wayne's Musical Version of War of the Worlds, the chances of anything coming from Mars are...",
+			"correct_answer": "A million to one",
+			"incorrect_answers": [
+				"A billion to one",
+				"A trillion to one",
+				"A hundred to one"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What name does the little headcrab in 'Half Life 2' have?",
+			"correct_answer": "Lamarr",
+			"incorrect_answers": [
+				"Jumperr",
+				"Drett",
+				"Jerry"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which horror movie had a sequel in the form of a video game released in August 20, 2002?",
+			"correct_answer": "The Thing",
+			"incorrect_answers": [
+				"The Evil Dead",
+				"Saw",
+				"Alien"
+			]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What were the first states to break away from Yugoslavia?",
+			"correct_answer": "Slovenia, Croatia",
+			"incorrect_answers": [
+				"Macedonia, Montenegro",
+				"Slovenia, Macedonia",
+				"Montenegro, Slovenia"
+			]
+		},
+		{
+			"category": "Entertainment: Comics",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which of the following superheros did Wonder Woman NOT have a love interest in?",
+			"correct_answer": "Green Arrow",
+			"incorrect_answers": [
+				"Superman",
+				"Batman",
+				"Steve Trevor"
+			]
+		},
+		{
+			"category": "Entertainment: Japanese Anime & Manga",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What year did the anime 'Himouto! Umaru-chan' air?",
+			"correct_answer": "2015",
+			"incorrect_answers": [
+				"2014",
+				"2012",
+				"2013"
+			]
+		},
+		{
+			"category": "Entertainment: Cartoon & Animations",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "In the animated series RWBY, what is the name of the weapon used by Weiss Schnee?",
+			"correct_answer": "Myrtenaster",
+			"incorrect_answers": [
+				"Gambol Shroud",
+				"Crescent Rose",
+				"Ember Celica"
+			]
+		},
+		{
+			"category": "Vehicles",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Volkswagen's legendary VR6 engine has cylinders positioned at what degree angle?",
+			"correct_answer": "15 Degree",
+			"incorrect_answers": [
+				"30 Degree",
+				"45 Degree",
+				"90 Degree"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "In the Half-Life franchise, what is the real name of the 'gravity gun'?",
+			"correct_answer": "Zero-Point Energy Field Manipulator",
+			"incorrect_answers": [
+				"Universal Gravity Manipulation Device",
+				"Isaac Newton's Theory Disprover",
+				"Quantum Energy Displacement Modifier"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which franchise had a special event hosted in the popular MMORPG Final Fantasy XIV: A Realm Reborn?",
+			"correct_answer": "Yo-kai Watch",
+			"incorrect_answers": [
+				"Pok&eacute;mon",
+				"Yu-gi-oh",
+				"Buddyfight"
+			]
+		},
+		{
+			"category": "Science & Nature",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Deuterium is an isotope of which element?",
+			"correct_answer": "Hydrogen",
+			"incorrect_answers": [
+				"Nitrogen",
+				"Helium",
+				"Neon"
+			]
+		},
+		{
+			"category": "Entertainment: Film",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "This trope refers to minor characters that are killed off to show how a monster works.",
+			"correct_answer": "Red Shirt",
+			"incorrect_answers": [
+				"Minions",
+				"Expendables",
+				"Cannon Fodder"
+			]
+		},
+		{
+			"category": "History",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which historical conflict killed the most people?",
+			"correct_answer": "World War II",
+			"incorrect_answers": [
+				"Taiping Rebellion",
+				"Three Kingdoms War",
+				"Mongol conquests"
+			]
+		},
+		{
+			"category": "Science: Computers",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": ".at is the top-level domain for what country?",
+			"correct_answer": "Austria",
+			"incorrect_answers": [
+				"Argentina",
+				"Australia",
+				"Angola"
+			]
+		},
+		{
+			"category": "Animals",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What dog bread is one of the oldest breeds of dog and has flourished since before 400 BCE.",
+			"correct_answer": "Pugs",
+			"incorrect_answers": [
+				"Bulldogs",
+				"Boxers",
+				"Chihuahua"
+			]
+		},
+		{
+			"category": "Entertainment: Cartoon & Animations",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which one of these cartoon characters is NOT voiced by Rob Paulsen?",
+			"correct_answer": "Max Tennyson (Ben 10)",
+			"incorrect_answers": [
+				"Carl Wheezer (Jimmy Neutron)",
+				"Yakko Warner (Animaniacs)",
+				"The Mask (The Mask, TV Series)"
+			]
+		},
+		{
+			"category": "Entertainment: Television",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "How many seasons did the TV show 'Donkey Kong Country' last?",
+			"correct_answer": "2",
+			"incorrect_answers": [
+				"1",
+				"4",
+				"5"
+			]
+		},
+		{
+			"category": "Geography",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What is the region conjoining Pakistan, India, and China with unknown leadership called?",
+			"correct_answer": "Kashmir",
+			"incorrect_answers": [
+				"Andorra",
+				"Gibraltar",
+				"Quin"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What was the first Call of Duty game to include the Zombies gamemode?",
+			"correct_answer": "Call of Duty: World at War",
+			"incorrect_answers": [
+				"Call of Duty: Black Ops",
+				"Call of Duty: Modern Warfare 2",
+				"Call of Duty: Black Ops III"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Danganronpa Another Episode: Ultra Despair Girls is set after which Danganronpa game?",
+			"correct_answer": "Danganronpa: Trigger Happy Havoc",
+			"incorrect_answers": [
+				"Danganronpa 2: Goodbye Despair",
+				"Danganronpa V3: Killing Harmony",
+				"Danganronpa 3: The End of Hope's Peak High School"
+			]
+		},
+		{
+			"category": "Entertainment: Video Games",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which game is NOT part of the Science Adventure series by 5pb. and Nitroplus?",
+			"correct_answer": "Occultic; Nine",
+			"incorrect_answers": [
+				"Steins; Gate",
+				"Robotics; Notes",
+				"Chaos; Child"
+			]
+		},
+		{
+			"category": "Sports",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Who won the 'Champions League' in 1999?",
+			"correct_answer": "Manchester United",
+			"incorrect_answers": [
+				"Barcelona",
+				"Bayern Munich",
+				"Liverpool"
+			]
+		},
+		{
+			"category": "Entertainment: Cartoon & Animations",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "In 'The Simpsons', where did Homer and Marge first meet?",
+			"correct_answer": "At Summer Camp",
+			"incorrect_answers": [
+				"At High School",
+				"At Church",
+				"At 742 Evergreen Terrace"
+			]
+		}
+	]
+}

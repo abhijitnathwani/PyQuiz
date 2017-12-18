@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst')) as f:
 
 setup(
     name='py-quiz',
-    version='0.2',
+    version='0.3',
     description='Python based Quiz game.',
     long_description=long_description,
     author='Abhijit Nathwani',

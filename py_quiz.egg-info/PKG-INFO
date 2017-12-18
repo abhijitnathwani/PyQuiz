@@ -1,11 +1,12 @@
 Metadata-Version: 1.0
 Name: py-quiz
-Version: 0.2
+Version: 0.3
 Summary: Python based Quiz game.
 Home-page: https://github.com/abhijitnathwani/PyQuiz
 Author: Abhijit Nathwani
 Author-email: abhijit.nathwani@gmail.com
 License: UNKNOWN
+Description-Content-Type: UNKNOWN
 Description: PyQuiz
         PyQuiz is an interactive quiz game built with Python. The aim was to create and application and learn the basics of python GUI programming with TKinter. As I explored Tkinter more, I thought of developing this simplest game.
         

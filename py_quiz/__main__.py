@@ -52,7 +52,7 @@ class Application(tk.Frame):
 	'''
 	Load the About Info Box.
 	'''
-        tkMessageBox.showinfo("About PyQuiz!","Welcome to PyQuiz! v0.2\n PyQuiz is developed to explore Tkinter and then started off as a simple application.\nPyQuiz! is maintained at \nhttps://github.com/abhijitnathwani/PyQuiz/ \n\nYour contributions and suggestions are welcome. Feel free to fork and pull changes to PyQuiz! The application is open-source and is open for development.\n\nPyQuiz is developed and maintained by Abhijit Nathwani. For suggestions and changes, feel free to drop an email:\n abhijit[dot]nathwani[at]gmail[dot]com .\n\nInitial Release: Sept '17.")
+        tkMessageBox.showinfo("About PyQuiz!","Welcome to PyQuiz! v0.3\n PyQuiz is developed to explore Tkinter and then started off as a simple application.\nPyQuiz! is maintained at \nhttps://github.com/abhijitnathwani/PyQuiz/ \n\nYour contributions and suggestions are welcome. Feel free to fork and pull changes to PyQuiz! The application is open-source and is open for development.\n\nPyQuiz is developed and maintained by Abhijit Nathwani. For suggestions and changes, feel free to drop an email:\n abhijit[dot]nathwani[at]gmail[dot]com .\n\nInitial Release: Sept '17.")
 
     def confirm_quit(self):
 	'''

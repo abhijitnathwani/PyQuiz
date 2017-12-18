@@ -6,11 +6,18 @@ The PyQuiz opens up with multiple choice questions and increments your score wit
 Release: v0.2 
 29th September, 2017.
 
+Release: v0.3
+18th December, 2017.
+
 ## Installation
 
 To install PyQuiz! to your system,
 
 `sudo pip install py-quiz`
+
+or clone this repo, and fire
+
+`$ sudo python setup.py install` from the cloned repository.
 
 ## To Run Py-Quiz
 

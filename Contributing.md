@@ -1,5 +1,11 @@
 # Getting started for developers
 
+
+## Contributors
+
+  * [sauravchirania](https://github.com/sauravchirania "Saurav Chirania")
+  * [riyamann]( https://github.com/riya-maan "Riya Mann")
+
 ## Contributor responsibility, money and license
 
 No responsibility for any financial or other damage.
