@@ -10,13 +10,13 @@
 
 No responsibility for any financial or other damage.
 
-People contributing to the project are unpaid, it's entirely a volunteer effort. No money is made from this application at the time of writing (and there are no plans for this to change)
+People contributing to the project are unpaid, it's entirely a volunteer effort. No money is made from this application currently (and there are no plans for this to change)
 
 This application is Open Source Software. The software license is MIT.
 
 ## How do I get an overview of the project?
 
-* Read about the [README File](README.md) for the application
+* Read through the [README File](README.md) of the application
 * If things are unclear, please ask at abhijit.nathwani@gmail.com
 
 ## What can I do right now?
@@ -37,7 +37,7 @@ This application is Open Source Software. The software license is MIT.
 8. If any further changes need to be made, comments will be made on the pull request.
 
 
-If you're unsure of some details while you're making edits, you can comment on the issue, or drop an email on abhijit[dot]nathwani[at]gmail[dot]com .
+If you're unsure of some details while you're making edits, you can comment on the issue, or drop an email on abhijit.nathwani@gmail.com .
 
 It's possible to work on two or more different patches (and therefore multiple branches) at one time, but it's recommended that beginners only work on one patch at a time.
 
