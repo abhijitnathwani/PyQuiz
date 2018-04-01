@@ -1,7 +1,7 @@
 # PyQuiz
-PyQuiz is an interactive quiz game built with Python. The aim was to create and application and learn the basics of python GUI programming with TKinter. As I explored Tkinter more, I thought of developing this simplest game.
+PyQuiz is an interactive quiz game built with Python. Originally, the aim of this project was to create an application and learn the basics of Python GUI programming with TKinter. As I explored Tkinter more, I got the idea to develop this simple game.
 
-The PyQuiz opens up with multiple choice questions and increments your score with 5 as you answer correctly in the game and reduces 5 points for every incorrect answer. It also asks you for your confirmation while exiting the application.
+When opened, the PyQuiz application provides its user with multiple choice questions. The user's score is incremented by 5 points for each correct answer and reduced by 5 points with every incorrect answer. It also asks the user for confirmation to exit the application.
 
 Release: v0.2 
 29th September, 2017.
@@ -30,7 +30,7 @@ Just fire up the command `py-quiz` in your terminal
 * ~~Add questions from JSON file.~~
 * ~~Create a `pip` installer package~~
 * ~~Confirm quit option~~
-* Resize Window as per question length. ( If somebody can help me with this, it'll be great!)
+* Resize Window as per question length. ( If someone could help me with this, it would be great!)
 
 ## To Contribute to this project
 
@@ -45,4 +45,4 @@ Check the [Contributing.md](Contributing.md) file on how to contribute to this o
 ## Info
 
 PyQuiz is maintained at https://github.com/abhijitnathwani/PyQuiz/
-Any questions/suggestions are welcome. Feel free to drop an email: abhijit[dot]nathwani[at]gmail[dot]com or raise and issue with the repo.
+Any questions/suggestions are welcome. Feel free to drop an email: abhijit.nathwani@gmail.com or raise and issue with the repo.
