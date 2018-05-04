@@ -1,7 +1,7 @@
 # PyQuiz
-PyQuiz is an interactive quiz game built with Python. Originally, the aim of this project was to create an application and learn the basics of Python GUI programming with TKinter. As I explored Tkinter more, I got the idea to develop this simple game.
+PyQuiz is an interactive quiz game built with Python. Originally, the aim of this project was to create an application and learn the basics of Python GUI programming with Tkinter. As I explored Tkinter more, I got the idea to develop this simple game.
 
-When opened, the PyQuiz application provides its user with multiple choice questions. The user's score is incremented by 5 points for each correct answer and reduced by 5 points with every incorrect answer. It also asks the user for confirmation to exit the application.
+When opened, the PyQuiz application provides its user with multiple choice questions. The user's score is incremented by 5 points for each correct answer and reduced by 5 points with every incorrect answer. It also asks the user for confirmation before exiting the application.
 
 Release: v0.2 
 29th September, 2017.
@@ -11,7 +11,7 @@ Release: v0.3
 
 ## Installation
 
-To install PyQuiz! to your system,
+To install PyQuiz to your system,
 
 `sudo pip install py-quiz`
 
