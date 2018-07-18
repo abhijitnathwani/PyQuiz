@@ -125,10 +125,7 @@ class Application(tk.Frame):
         self.optionB.set(self.answers.pop(random.randrange(len(self.answers))))
         self.optionC.set(self.answers.pop(random.randrange(len(self.answers))))
         self.optionD.set(self.answers.pop(random.randrange(len(self.answers))))
-        self.radioButtonA.deselect()
-        self.radioButtonB.deselect()
-        self.radioButtonC.deselect()
-        self.radioButtonD.deselect()
+        self.radioButtonA.select()	# sets the first radio button as the default
 	
         
     def createWidgets(self,top):
