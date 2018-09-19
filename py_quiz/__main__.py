@@ -31,6 +31,7 @@ class Application(tk.Frame):
 
         tkMessageBox.showinfo('Welcome!','Welcome to PyQuiz!\nA quiz built in Python to test your general knowledge.')
         tk.Frame.__init__(self, master)
+        self.flag=0
         self.grid()
         # declaring variables to store question and answer
         self.optionA = tk.StringVar() # control variable for option A
@@ -77,6 +78,7 @@ class Application(tk.Frame):
 	Function to set the 'selected_answer' variable to the selected option label to compare with correct answer later.
 	Args: answer - gets the option number which calls this function.
 	'''
+
         if answer==1:
             self.selected_answer = self.optionA.get()
         elif answer==2:
@@ -86,10 +88,20 @@ class Application(tk.Frame):
         elif answer == 4:
             self.selected_answer = self.optionD.get()
 
+        self.flag=1
+
     def validate_ans(self):
+
+
+    	if self.flag==1:
+    		self.flag=0
+    	else:
+    		self.selected_answer="PY_VAR1"
 	'''
 	Function to validate the selected answer with the correct answer. If they match, increase the score by 5.
 	'''
+
+
         print "In Validate answer:"
         print "selected:",self.selected_answer
         print "Correct:",self.correct_answer
@@ -103,6 +115,8 @@ class Application(tk.Frame):
         else:
             self.score.set(int(self.score.get()) - 5)
             print "Incorrect!"
+
+
 	   
 	
 
