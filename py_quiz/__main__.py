@@ -17,10 +17,18 @@ def main(args=None):
 class Application(tk.Frame):
 
     def __init__(self, master=None):
-	'''
-	Call to the constructor when the object is created.
-	Variables initialized and set the grid as per need.
-	'''
+    	'''
+
+	
+		Call to the constructor when the object is created.
+		Variables initialized and set the grid as per need.
+	
+
+    	'''
+
+	
+
+
         tkMessageBox.showinfo('Welcome!','Welcome to PyQuiz!\nA quiz built in Python to test your general knowledge.')
         tk.Frame.__init__(self, master)
         self.grid()
