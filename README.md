@@ -46,3 +46,5 @@ Check the [Contributing.md](Contributing.md) file on how to contribute to this o
 
 PyQuiz is maintained at https://github.com/abhijitnathwani/PyQuiz/
 Any questions/suggestions are welcome. Feel free to drop an email: abhijit.nathwani@gmail.com or raise and issue with the repo.
+
+The branch `Pyquiz-Python3` contains the source for Python3 converted by [idenc](https://github.com/idenc).
