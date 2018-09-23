@@ -6,6 +6,7 @@
   * [Anuradha-Iyer](https://github.com/Anuradha-Iyer "Anuradha Iyer")
   * [sauravchirania](https://github.com/sauravchirania "Saurav Chirania")
   * [riyamann]( https://github.com/riya-maan "Riya Mann")
+  * [idenc](https://github.com/idenc Iden Craven)
 
 ## Contributor responsibility, money and license
 
