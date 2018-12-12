@@ -612,6 +612,18 @@
 				"At Church",
 				"At 742 Evergreen Terrace"
 			]
+		},
+		{
+			"category": "General Knowledge",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "Which of these is NOT one of Santa's reindeer",
+			"correct_answer": "Hearken",
+			"incorrect_answers": [
+				"Dasher",
+				"Blitzen",
+				"Comet"
+			]
 		}
 	]
 }
