@@ -103,13 +103,17 @@ class Application(tk.Frame):
 
 
         print "In Validate answer:"
-        print "selected:",self.selected_answer
+        if not self.selected_answer:
+            print "No answer selected"
+        else:
+            print "selected:", self.selected_answer
+
         print "Correct:",self.correct_answer
         self.py_var = ["PY_VAR1","PY_VAR2","PY_VAR3","PY_VAR4"]
         if str(self.selected_answer) == str(self.correct_answer):
             self.score.set(int(self.score.get()) + 5)
             print "Correct!"
-        elif str(self.selected_answer) in self.py_var :
+        elif str(self.selected_answer) in self.py_var:
             print "IN py var if"
             pass
         else:
@@ -134,7 +138,9 @@ class Application(tk.Frame):
             randomindex = random.randint(0,len(self.questions["results"])-1)
             self.question_index.append(randomindex)
             print "Debug:"
-            print self.questions["results"][randomindex]["question"] 
+            print self.questions["results"][randomindex]["question"]
+
+        self.selected_answer = ""  # reset selected answer
         self.correct_answer = self.questions["results"][randomindex]["correct_answer"] # parse the correct answer from JSON file and store it.
         #print self.correct_answer
         self.answers = self.questions["results"][randomindex]["incorrect_answers"] # parse the other incorrect answers
