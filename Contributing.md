@@ -7,6 +7,7 @@
   * [sauravchirania](https://github.com/sauravchirania "Saurav Chirania")
   * [riyamann]( https://github.com/riya-maan "Riya Mann")
   * [idenc](https://github.com/idenc "Iden Craven")
+  * [itsmeashutosh43](https://github.com/itsmeashutosh43 "Ashutosh Chapagain")
 
 ## Contributor responsibility, money and license
 
