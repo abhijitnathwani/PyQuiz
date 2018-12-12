@@ -578,6 +578,18 @@
 			]
 		},
 		{
+			"category": "Geography",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "What is the longest river in Asia?",
+			"correct_answer": "Yangtze River",
+			"incorrect_answers": [
+				"Tigris River",
+				"Ganga River",
+				"Aldan River",
+			]
+		},
+		{
 			"category": "Sports",
 			"type": "multiple",
 			"difficulty": "medium",
