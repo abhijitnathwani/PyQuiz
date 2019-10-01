@@ -590,6 +590,18 @@
 			]
 		},
 		{
+			"category": "Sports",
+			"type": "multiple",
+			"difficulty": "medium",
+			"question": "In which year did Maradona score a goal with his hand?",
+			"correct_answer": "1986",
+			"incorrect_answers": [
+				"1980",
+				"1968",
+				"1996"
+			]
+		},
+		{
 			"category": "Entertainment: Cartoon & Animations",
 			"type": "multiple",
 			"difficulty": "medium",
