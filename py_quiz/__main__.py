@@ -78,15 +78,14 @@ class Application(tk.Frame):
 	Function to set the 'selected_answer' variable to the selected option label to compare with correct answer later.
 	Args: answer - gets the option number which calls this function.
 	'''
-
-        if answer==1:
-            self.selected_answer = self.optionA.get()
-        elif answer==2:
-            self.selected_answer = self.optionB.get()
-        elif answer == 3:
-            self.selected_answer = self.optionC.get()
-        elif answer == 4:
-            self.selected_answer = self.optionD.get()
+	
+	selected = {
+		1:self.optionA.get(),
+		2:self.optionB.get(),
+		3:self.optionC.get(),
+		4:self.optionD.get()
+	}
+	self.selected_answer = selected.get(answer)
 
         self.flag=1
 
